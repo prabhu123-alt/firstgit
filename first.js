@@ -1422,33 +1422,128 @@
 
 // console.log(reversedData); // Output: "uhbarp"
 
-var pra1 = document.getElementById("pra1");
-var pra3 = document.getElementById("pra3");
-var pra4 = document.getElementById("pra4");
+// var pra1 = document.getElementById("pra1");
+// var pra3 = document.getElementById("pra3");
+// var pra4 = document.getElementById("pra4");
 
 
-const URL = "https://freetestapi.com/api/v1/cats";
+// const URL = "https://freetestapi.com/api/v1/cats";
 
-const apidata = async () => {
-    try {
-        let response = await fetch(URL);
-        let AllData = await response.json();
-        console.log(AllData);
-        AllData.forEach(element => {
-            var data=document.createElement('p');
-            if(element.id==12 &&  element.name=='Birman'){
-            data.textContent=element.id+ " " +element.name;
-            pra1.appendChild(data);
-            console.log(pra1);
-            }
-            // }else{
-            //     console.log("error");
-            // }
-            
-        });
-    } catch (error) {
-        console.error("Fetch error:", error);
-    }
+// const apidata = async () => {
+//     try {
+//         let response = await fetch(URL);
+//         let AllData = await response.json();
+//         console.log(AllData);
+//         AllData.forEach(element => {
+//             var data=document.createElement('p');
+//             if(element.id==12 &&  element.name=='Birman'){
+//             data.textContent=element.id+ " " +element.name;
+//             pra1.appendChild(data);
+//             console.log(pra1);
+//             }
+//             // }else{
+//             //     console.log("error");
+//             // }
+
+//         });
+//     } catch (error) {
+//         console.error("Fetch error:", error);
+//     }
+// };
+
+// apidata();
+
+
+//  function totalarea( length , width){
+//     const area = length*width;
+//     console.log("total area is =",area);
+
+//  }
+//  totalarea(2,3);
+
+// 1
+// 1 2
+// 1 2 3
+
+// for (i = 1; i <= 5; i++) {
+//     let  gap = " ";
+//    for (k = 1; k <= i; k++) { 
+//        gap += k ;
+
+//    }
+//    console.log(gap);
+
+// // }
+// for (i = 5; i >= 1; i--) {
+//    let  gap = " ";
+//    for (k = 5; k >= 1; k--) { 
+//       gap += k ;
+
+//   }
+//   console.log(gap);
+
+// }
+// for (let i = 5; i >= 1; i--) {
+//    let gap = ""; // Initialize an empty string for each line
+//    for (let k = 5; k >= i; k--) {
+//        gap += k; // Append the current number to the output string
+//    }
+//    console.log(gap); // Print the complete line
+// }
+
+
+
+
+
+
+
+// for (num = 1; num<2; num++){
+//    console.log(num);
+// }
+
+// function totalarea(base,height){
+//     return base*height/2;
+// }
+// console.log(totalarea(7,4));
+
+
+// function total_days(age_in_years) {
+//     return age_in_years * 365;
+// };
+// console.log(total_days(20));
+
+
+// function cubes(number) {
+//     return number * number * number;
+// };
+// console.log(cubes(3));
+
+
+// let arr = [1,2,3,4,5,6];
+// function first(){
+//     console.log(arr[1]);
+// };
+// first();
+
+
+
+// function power(voltage, current) {
+//     return voltage * current;
+// };
+// console.log(power(110, 3));
+
+// function total_sec(hours) {
+//     return hours * 60 * 60;
+// }
+// console.log(total_sec(10));
+
+// function numbers(num){
+//     return num+1;
+// }
+// console.log(numbers(9));
+
+function findPerimeter(length, width) {
+    var total= length + width ;
+    return total*2;
 };
-
-apidata();
+console.log(findPerimeter(20,10));
