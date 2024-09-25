@@ -1570,13 +1570,120 @@
 // let fullName = name1.concat(gap+name2);
 // console.log(fullName);
 
-function lessThan100(num1,num2){
-    let totalnum= num1+num2;
-    if (totalnum>100){
-        console.log("false");
+// function lessThan100(num1,num2){
+//     let totalnum= num1+num2;
+//     if (totalnum>100){
+//         console.log("false");
 
-    }else{
-        console.log("true");
+//     }else{
+//         console.log("true");
+//     }
+// };
+// lessThan100(82,34);
+
+
+// let num =1 ;
+// let num2 ="";
+// for (num = 1; num <=8; num++){
+//    sum = num2+=num;
+//    console.log(sum);
+// }
+// let num = [1, 2, 3, 4, 5, 67];
+// let minValue = Math.min(...num);
+// console.log( minValue);
+// let maxValue = Math.max(...num);
+// console.log( maxValue);
+
+
+// function total(num1,num2){
+//     return num1<<num2;
+// };
+// console.log(total(5,2));
+
+// let time = new Date(2024, 11, 23);
+
+// function isChristmasEve(date) {
+//     return date.getDate() === 24 && date.getMonth() === 11; 
+// }
+// function Christmas() {
+//     if (isChristmasEve(time)) {
+//         console.log("true");
+//     } else {
+//         console.log("false");
+//     }
+// var url = 'https://cat-fact.herokuapp.com/facts';
+
+// fetch(url)
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         console.log(data); // Handle the fetched data
+//     })
+//     .catch(error => {
+//         console.error('There was a problem with the fetch operation:', error);
+//     });
+
+
+const URL = "https://freetestapi.com/api/v1/cats";
+
+var div = document.getElementById("span");
+const api = async() =>{
+    try {
+        let response = await fetch(URL);
+        let allApi = await response.json();
+        console.log(allApi);
+        allApi.forEach(element => {
+             pra = document.createElement("div");
+             image = document.createElement("img");
+            pra.textContent= element.id + "  " +element.name + " "+element.origin;
+            image.src = element.image;
+            div.appendChild(pra);
+            div.appendChild(image);
+
+        });
+    } catch (error) {console.log("error",error);
+        
     }
-};
-lessThan100(82,34);
+}
+api();
+
+
+
+
+
+
+
+
+
+
+
+// const apidata = async () => {
+//     try {
+//         let response = await fetch(URL);
+//         let AllData = await response.json();
+//         console.log(AllData);
+//         AllData.forEach(element => {
+//             var data=document.createElement('p'); 
+//             data.textContent=element.id+ " " +element.name;
+//             pra1.appendChild(data);
+//             console.log(pra1);  
+//         });
+//     } catch (error) {
+//         console.error("Fetch error:", error);
+//     }
+// };
+// apidata();
+
+
+
+
+
+
+
+
+
+
