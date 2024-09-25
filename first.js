@@ -1542,8 +1542,41 @@
 // }
 // console.log(numbers(9));
 
-function findPerimeter(length, width) {
-    var total= length + width ;
-    return total*2;
+// function findPerimeter(length, width) {
+//     var total= length + width ;
+//     return total*2;
+// };
+// console.log(findPerimeter(20,10));
+
+// function  numberLess(number){
+//     if (number<=0){
+//         console.log("true");
+//     }else{
+//         console.log("false");
+//     }
+// };
+// (numberLess(1));
+
+// let num = 4;
+// let n = 2;
+// let Ploygon = num - n;
+//  let somePloygon = Ploygon * 180;
+// console.log(somePloygon);
+
+
+// let name1 =("abhay");
+// let gap = " "
+// let name2= ("singh");
+// let fullName = name1.concat(gap+name2);
+// console.log(fullName);
+
+function lessThan100(num1,num2){
+    let totalnum= num1+num2;
+    if (totalnum>100){
+        console.log("false");
+
+    }else{
+        console.log("true");
+    }
 };
-console.log(findPerimeter(20,10));
+lessThan100(82,34);
