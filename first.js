@@ -1628,25 +1628,29 @@
 //     });
 
 
-const URL = "https://freetestapi.com/api/v1/cats";
+// const URL = "https://freetestapi.com/api/v1/cats";
 
-var div = document.getElementById("span");
-const api = async() =>{
-    try {
-        let response = await fetch(URL);
-        let allApi = await response.json();
-        console.log(allApi);
-        allApi.forEach(element => {
-             pra = document.createElement("div");
-             image = document.createElement("img");
-            pra.textContent= element.id + "  " +element.name + " "+element.origin;
-            image.src = element.image;
-            div.appendChild(pra);
-            div.appendChild(image);
+// var div = document.getElementById("span");
+// const api = async() =>{
+//     try {
+//         let response = await fetch(URL);
+//         let allApi = await response.json();
+//         console.log(allApi);
+//         allApi.forEach(element => {
+//              pra = document.createElement("div");
+//              image = document.createElement("img");
+//             pra.textContent= element.id + "  " +element.name + " "+element.origin;
+//             image.src = element.image;
+//             div.appendChild(pra);
+//             div.appendChild(image);
 
-        });
-    } catch (error) {console.log("error",error);
+//         });
+//     } catch (error) {console.log("error",error);
         
-    }
-}
-api();
+//     }
+// }
+// api();
+
+
+
+
